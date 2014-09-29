@@ -15,6 +15,7 @@ age = current_year - birth_year
 print "You are " + str(age) + " years old"
 
 budget = 200
+#change to 90 prints the else statement
 
 if budget > 100:
     brand = "NIKE"
