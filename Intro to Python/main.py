@@ -23,6 +23,7 @@ if budget > 100:
 elif budget > 50:
     print "We can at least get some generic sneakers"
 else:
+    pass
 
 print "hi"
 
