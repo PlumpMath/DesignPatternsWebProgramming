@@ -12,6 +12,5 @@ last_name = "De Frog"
 birth_year = 1985
 current_year = 2014
 age = current_year - birth_year
-print "You are " + age + " years old"
-
+print "You are " + str(age) + " years old"
 
