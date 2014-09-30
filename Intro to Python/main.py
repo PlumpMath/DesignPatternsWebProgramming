@@ -19,11 +19,13 @@ budget = 90
 
 if budget > 100:
     brand = "NIKE"
-    print "Yay! We can buy cool " + brand + " shoes!"
+    #print "Yay! We can buy cool " + brand + " shoes!"
 elif budget > 50:
-    print "We can at least get some generic sneakers"
+    #print "We can at least get some generic sneakers"
+    pass
 else:
     pass
 
-print "hi"
+characters = ["stacy", "matthew", "tyler", "cannon"]
+print characters
 
