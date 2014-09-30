@@ -61,12 +61,15 @@ for r in rappers:
 
 #Functions --------
 
+x = 2
+
 def calcArea(h, w):
     area = h * w
-    return area
+    return area + x
 
 a = calcArea(20, 40);
-print "My area is " + str(a) + "sqft"
+#print "My area is " + str(a) + "sqft"
+print a
 
 
 
