@@ -28,5 +28,9 @@ else:
 
 characters = ["stacy", "matthew", "tyler", "cannon"]
 characters.append("Daffy Duck")
-print characters[0]
+#print characters[0]
 
+movies = dict() # create dictionary object
+movies = {"Star Wars":"Darth Vader", "Silence of the lambs":"Hanibal Lecture"}
+#star wars is the key pointing to darth vader value
+print movies["Star Wars"]
