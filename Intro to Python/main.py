@@ -60,7 +60,7 @@ for r in rappers:
     pass
 
 #Functions --------
-
+'''
 x = 2
 
 def calcArea(h, w):
@@ -72,7 +72,15 @@ a = calcArea(20, 40);
 print a
 
 
+'''
 
+weight = 200
+height = 63
+message = '''
+Your height is {height} and your weight is {weight}
+'''
+message = message.format(**locals())
+print message
 
 
 
