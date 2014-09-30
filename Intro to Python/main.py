@@ -27,5 +27,6 @@ else:
     pass
 
 characters = ["stacy", "matthew", "tyler", "cannon"]
+characters.append("Daffy Duck")
 print characters
 
