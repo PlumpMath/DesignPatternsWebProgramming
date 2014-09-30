@@ -28,5 +28,5 @@ else:
 
 characters = ["stacy", "matthew", "tyler", "cannon"]
 characters.append("Daffy Duck")
-print characters
+print characters[0]
 
