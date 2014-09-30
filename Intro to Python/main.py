@@ -35,11 +35,19 @@ movies = {"Star Wars":"Darth Vader", "Silence of the lambs":"Hanibal Lecture"}
 #star wars is the key pointing to darth vader value
 print movies["Star Wars"]
 
+#While Loop--------
+'''
 i = 0
 while i<9:
     print "The count is", i
     i = i+1
 
+'''
+
+#For Loop--------
+for i in range(0,10):
+    print "The count is", i
+    i = i+1
 
 
 
