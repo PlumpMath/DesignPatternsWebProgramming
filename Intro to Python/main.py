@@ -57,6 +57,27 @@ for i in range(0,10):
 rappers = ["Tupac", "NAS", "Eminem"]
 for r in rappers:
     print "One of the best rappres is " + r
+    pass
+
+#Functions --------
+
+def calcArea(h, w):
+    area = h * w
+    return area
+
+a = calcArea(20, 40);
+print "My area is " + str(a) + "sqft"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
