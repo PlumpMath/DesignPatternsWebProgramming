@@ -74,10 +74,19 @@ print a
 
 '''
 
-weight = 200
-height = 63
+title = "Contact Us"
+body = "You can contact us at contact@us.com"
 message = '''
-Your height is {height} and your weight is {weight}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>{title}</title>
+    </head>
+    <body>
+        {body}
+    </body>
+</html>
+
 '''
 message = message.format(**locals())
 print message
