@@ -13,16 +13,12 @@ response12 = raw_input("")
 
 print "Your lyrics to Every Rose Has its Thorn by Poison"
 print "We both lie silently still in the dead of the, ", response1
-print "Although we both lie close together we feel" + response2 + " miles apart inside"
-pass
-response4 = said
+print "Although we both lie close together we feel " + response2 + " miles apart inside"
 
-
-if response4 > said:
+if response3 > said:
     word = "said"
     print "I know it was something I  " + word
-elif budget > did:
-    print "I know it was something I did"
+elif response3 > did:
+    print "I know it was something I did "
 
-else:
-    pass
+print "Did my words not come out right?"
