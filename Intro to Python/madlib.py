@@ -12,9 +12,12 @@ print "We both lie silently still in the dead of the " + response1
 
 print "Although we both lie close together we feel " + response2 + " miles apart inside"
 
+'''
 if response3 = said:
     print "It was something I said"
 elif response3 = did:
     print "It was something I did"
 
 print response4
+
+'''
