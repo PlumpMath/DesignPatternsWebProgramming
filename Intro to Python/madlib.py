@@ -1,24 +1,20 @@
-response1 = raw_input("Enter time of Day ex. morning noon or night ")
+print ("This is Stacy's Mad Lib Game")
+
+response1 = raw_input("Do you prefer Morning Noon or Night ")
+
 response2 = raw_input("Enter a number ")
-response3 = raw_input("Was it something I said or something I did? ")
-response4 = raw_input("")
-response5 = raw_input("")
-response6 = raw_input("")
-response7 = raw_input("")
-response8 = raw_input("")
-response9 = raw_input("")
-response10 = raw_input("")
-response11 = raw_input("")
-response12 = raw_input("")
 
-print "Your lyrics to Every Rose Has its Thorn by Poison"
-print "We both lie silently still in the dead of the, ", response1
-print "Although we both lie close together we feel " + response2 + " miles apart inside"
+response3 = raw_input("Was it something I said or something I did?")
 
-if response3 > said:
-    word = "said"
-    print "I know it was something I  " + word
+response4 = raw_input("Did my words not come out right? yes or no")
+
+print "We both lie silently still in the dead of the ", response1
+
+print "Although we both lie close together we feel ",  response2 ," miles apart inside"
+
+if response3 = said:
+    print "It was something I said"
 elif response3 > did:
-    print "I know it was something I did "
+    print "It was something I did"
 
-print "Did my words not come out right?"
+print response4
