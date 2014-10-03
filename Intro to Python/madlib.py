@@ -14,7 +14,7 @@ print "Although we both lie close together we feel ",  response2 ," miles apart 
 
 if response3 = said:
     print "It was something I said"
-elif response3 > did:
+elif response3 = did:
     print "It was something I did"
 
 print response4
