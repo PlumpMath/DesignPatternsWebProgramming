@@ -8,9 +8,9 @@ response3 = raw_input("Was it something I said or something I did?")
 
 response4 = raw_input("Did my words not come out right? yes or no")
 
-print "We both lie silently still in the dead of the ", response1
+print "We both lie silently still in the dead of the " + response1
 
-print "Although we both lie close together we feel ",  response2 ," miles apart inside"
+print "Although we both lie close together we feel " + response2 + " miles apart inside"
 
 if response3 = said:
     print "It was something I said"
