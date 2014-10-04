@@ -28,8 +28,11 @@ class MainHandler(webapp2.RequestHandler):
 #constcutor or setup method
 class Button(object):
     def __init__(self):
-        self.label = ""
+        self.label = "" #public attribute
+        self.__size = 60 #private attribute - two underscores
+        self._color = "0x0000" #protected attribute - one underscore
         #self.on_roll_over("Hello!!")
+        height = 40
 
     def click(self):
         print "I've been clicked"
@@ -38,7 +41,7 @@ class Button(object):
         print "You've roller over my button" + message
 
     def show_label(self):
-        print "My label is " + self.label
+        print "My label is " + self.label + "height " + self.height
 
 
 app = webapp2.WSGIApplication([
