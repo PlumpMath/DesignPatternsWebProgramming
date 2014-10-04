@@ -14,12 +14,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import webapp2
 
-class MainHandler(webapp2.RequestHandler):
-    def get(self):
+'''
+Stacy Faude
+10-4-14
+Simple Login
+'''
+import webapp2 #use the webapp2 library
+
+class MainHandler(webapp2.RequestHandler):#declairing a class and needs to be there
+    def get(self):#function that starts everything
         self.response.write('Hello world!')
+        #code goes here
 
+    def additional_functinos(self):
+        pass
+        #code goes here
+
+
+#never touch this
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
