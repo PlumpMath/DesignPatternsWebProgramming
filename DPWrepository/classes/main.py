@@ -18,13 +18,15 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        about_button = Button()
+        #contact_button = Button()
 
 #constcutor or setup method
 class Button(object):
     def __init__(self):
-        self.click()
-        self.on_roll_over("Hello!!")
+        print "constructor method of button ran"
+        #self.click()
+        #self.on_roll_over("Hello!!")
 
     def click(self):
         print "I've been clicked"
