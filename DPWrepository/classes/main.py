@@ -19,13 +19,15 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         about_button = Button()
-        #contact_button = Button()
+        about_button.label = "About Us"
+        about_button.show_label()
+        contact_button = Button()
+        contact_button.label = "Contact Us"
 
 #constcutor or setup method
 class Button(object):
     def __init__(self):
-        print "constructor method of button ran"
-        #self.click()
+        selt.label = ""
         #self.on_roll_over("Hello!!")
 
     def click(self):
@@ -33,6 +35,9 @@ class Button(object):
 
     def on_roll_over(self, message):
         print "You've roller over my button" + message
+
+    def show_label(self):
+        print "My label is " + self.label
 
 
 app = webapp2.WSGIApplication([
