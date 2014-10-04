@@ -23,11 +23,12 @@ class MainHandler(webapp2.RequestHandler):
         about_button.show_label()
         contact_button = Button()
         contact_button.label = "Contact Us"
+        contact_button.show_label()
 
 #constcutor or setup method
 class Button(object):
     def __init__(self):
-        selt.label = ""
+        self.label = ""
         #self.on_roll_over("Hello!!")
 
     def click(self):
