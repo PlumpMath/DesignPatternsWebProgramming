@@ -11,8 +11,10 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
         page = '''<!DOCTYPE HTML>
 <html>
     <head>
+        <title>Stacy Faude | Simple Login</title>
     </head>
     <body>
+        Hello Everyone!
     </body>
 </html>'''
         self.response.write(page)
