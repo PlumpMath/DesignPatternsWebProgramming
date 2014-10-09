@@ -8,7 +8,8 @@ import webapp2 #use the webapp2 library
 
 class MainHandler(webapp2.RequestHandler):#declaring a class
     def get(self): #function that starts everything. Catalyst
-
+    p = Page()
+    print p.print_out()
 
 class Page(object):
     def __init__(self):
@@ -64,8 +65,7 @@ class Page(object):
         #self.response.write(page) #printing the info out to the page
 
     def print_out(self):
-        all = all.format(**locals())
-        return all
+        return
 
 #never tough this
 app = webapp2.WSGIApplication([
