@@ -15,13 +15,17 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
     </head>
     <body>
         <form method ="GET">
-            <label>Name: </label><input type="text" />
-            <label>Email: </label><input type="text" />
+            <label>Name: </label><input type="text" name="user" />
+            <label>Email: </label><input type="text" name="email" />
             <input type="submit" value="Submit" />
         </form>
     </body>
 </html>'''
-        self.response.write(page)
+
+        #self.request.GET
+        #print "hello there"
+        print self.request.GET['user']
+        self.response.write(page) #printing the info out to the page
         #code goes here
 
 
