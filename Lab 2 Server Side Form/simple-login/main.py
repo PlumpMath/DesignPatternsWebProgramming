@@ -8,10 +8,17 @@ import webapp2 #use the webapp2 library
 
 class MainHandler(webapp2.RequestHandler):#declaring a class
     def get(self): #function that starts everything. Catalyst
+
+
+class Page(object):
+    def __init__(self):
+        self.css = "css/styles.css"
+
         page_head = '''<!DOCTYPE HTML>
 <html>
     <head>
         <title>Stacy Faude | Simple Form</title>
+        <link href={self.css}" rel="stylesheet" type="text/css" />
     </head>
     <body>'''
 
@@ -56,7 +63,9 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
 
         #self.response.write(page) #printing the info out to the page
 
-
+    def print_out(self):
+        all = all.format(**locals())
+        return all
 
 #never tough this
 app = webapp2.WSGIApplication([
