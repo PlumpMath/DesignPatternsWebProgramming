@@ -16,10 +16,12 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
     <body>'''
 
 
-        page_body = '''<form method ="GET">
-            <label>Name: </label><input type="text" name="user" />
-            <label>Email: </label><input type="text" name="email" />
-            <input type="submit" value="Submit" />'''
+        page_body = '''
+        <a href="?email="stacy@istacy.com">Stacy</a><br/>
+        <a href="matthew@istacy.com">Matthew</a><br/>
+        <a href="tyler@istacy.com">Tyler</a><br/>
+        <a href="canon@istacy.com">Canon</a><br/>
+        '''
         page_close = '''
         </form>
     </body>
