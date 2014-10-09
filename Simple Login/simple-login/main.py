@@ -24,8 +24,13 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
 
         #self.request.GET
         #print "hello there"
-        print self.request.GET['user']
-        self.response.write(page) #printing the info out to the page
+        if self.request.GET:
+            #stores info we got from the form
+            user = self.request.GET['user']
+            email = self.request.GET['email']
+
+            #print self.request.GET['user']
+        #self.response.write(page) #printing the info out to the page
         #code goes here
 
 
