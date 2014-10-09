@@ -38,7 +38,9 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
             #stores info we got from the form
             user = self.request.GET['user']
             email = self.request.GET['email']
-            self.response.write(page_head + user + ' ' + email + brand + age + page_close)
+            brand = self.request.GET['brand']
+            age = self.request.GET['age']
+            self.response.write(page_head + user + ' ' + email + ' ' + brand + ' ' + age + page_close)
         else:
             self.response.write(page_head + page_body + page_close) #print
 
