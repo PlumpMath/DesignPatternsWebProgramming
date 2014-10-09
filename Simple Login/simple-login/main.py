@@ -17,10 +17,10 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
 
 
         page_body = '''
-        <a href="?email="stacy@istacy.com">Stacy</a><br/>
-        <a href="matthew@istacy.com">Matthew</a><br/>
-        <a href="tyler@istacy.com">Tyler</a><br/>
-        <a href="canon@istacy.com">Canon</a><br/>
+        <a href="?email=stacy@istacy.com&user=Stacy">Stacy</a><br/>
+        <a href="?email=matthew@istacy.com&user=Matthew">Matthew</a><br/>
+        <a href="?email=tyler@istacy.com&user=Tyler">Tyler</a><br/>
+        <a href="?email=canon@istacy.com&user=Canon">Canon</a><br/>
         '''
         page_close = '''
         </form>
