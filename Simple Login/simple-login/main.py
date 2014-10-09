@@ -11,17 +11,24 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
         page_head = '''<!DOCTYPE HTML>
 <html>
     <head>
-        <title>Stacy Faude | Simple Login</title>
+        <title>Stacy Faude | Simple Form</title>
     </head>
     <body>'''
 
 
-        page_body = '''
-        <a href="?email=stacy@istacy.com&user=Stacy">Stacy</a><br/>
-        <a href="?email=matthew@istacy.com&user=Matthew">Matthew</a><br/>
-        <a href="?email=tyler@istacy.com&user=Tyler">Tyler</a><br/>
-        <a href="?email=canon@istacy.com&user=Canon">Canon</a><br/>
-        '''
+        page_body = '''<form method ="GET">
+            <label>Name: </label><input type="text" name="user" />
+            <label>Email: </label><input type="text" name="email" />
+            <input type="checkbox" name="brand" value="nikon" /> Nikon<br/>
+            <input type="checkbox" name="brand" value="canon" /> Canon<br/>
+            <input type="checkbox" name="brand" value="other" /> Other<br/>
+            <p>Select Age:</p>
+            <select name"age">
+                <option value="young">Under 20</option>
+                <option value="average">21-35</option>
+                <option value="old"36 or Older></option>
+            </select>
+            <input type="submit" value="Submit" />'''
         page_close = '''
         </form>
     </body>
