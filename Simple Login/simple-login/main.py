@@ -19,15 +19,24 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
         page_body = '''<form method ="GET">
             <label>Name: </label><input type="text" name="user" />
             <label>Email: </label><input type="text" name="email" />
-            <input type="checkbox" name="brand" value="nikon" /> Nikon<br/>
-            <input type="checkbox" name="brand" value="canon" /> Canon<br/>
-            <input type="checkbox" name="brand" value="other" /> Other<br/>
-            <p>Select Age:</p>
-            <select name="age">
-                <option value="young">Under 20</option>
-                <option value="average">21-35</option>
-                <option value="old">36 or Older</option>
+            <input type="checkbox" name="bread" value="white" /> White<br/>
+            <input type="checkbox" name="bread" value="wheat" /> Wheat<br/>
+            <input type="checkbox" name="bread" value="flatbread" /> Flat Bread<br/>
+            <p>Select Sandwich</p>
+            <select name="sandwich">
+                <option value="Pompeii">Pompeii</option>
+                <option value="Titan">Titan</option>
+                <option value="Erupter">Spartan</option>
+                <option value="Erupter">Spartan</option>
+                <option value="Quatro">Quatro</option>
+                <option value="Apollo">Apollo</option>
             </select>
+            <p>Soup of the Day?</p>
+            <select name="soup">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
             <input type="submit" value="Submit" />'''
         page_close = '''
         </form>
@@ -38,9 +47,10 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
             #stores info we got from the form
             user = self.request.GET['user']
             email = self.request.GET['email']
-            brand = self.request.GET['brand']
-            age = self.request.GET['age']
-            self.response.write(page_head + user + ' ' + email + ' ' + brand + ' ' + age + page_close)
+            bread = self.request.GET['bread']
+            sandwich = self.request.GET['sandwich']
+            soup = self.request.GET['soup']
+            self.response.write(page_head + user + ' ' + email + ' ' + bread + ' ' + sandwich + ' ' + soup + page_close)
         else:
             self.response.write(page_head + page_body + page_close) #print
 
