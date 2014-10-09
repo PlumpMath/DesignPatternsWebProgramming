@@ -14,7 +14,10 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
         <title>Stacy Faude | Simple Login</title>
     </head>
     <body>
-        Hello Everyone!
+        <form method ="GET">
+            <label>Name: </label><input type="text" />
+            <label>Email: </label><input type="text" />
+        </form>
     </body>
 </html>'''
         self.response.write(page)
