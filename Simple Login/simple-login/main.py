@@ -17,6 +17,7 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
         <form method ="GET">
             <label>Name: </label><input type="text" />
             <label>Email: </label><input type="text" />
+            <input type="submit" value="Submit" />
         </form>
     </body>
 </html>'''
