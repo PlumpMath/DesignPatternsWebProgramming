@@ -23,10 +23,10 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
             <input type="checkbox" name="brand" value="canon" /> Canon<br/>
             <input type="checkbox" name="brand" value="other" /> Other<br/>
             <p>Select Age:</p>
-            <select name"age">
+            <select name="age">
                 <option value="young">Under 20</option>
                 <option value="average">21-35</option>
-                <option value="old"36 or Older></option>
+                <option value="old">36 or Older</option>
             </select>
             <input type="submit" value="Submit" />'''
         page_close = '''
@@ -38,7 +38,7 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
             #stores info we got from the form
             user = self.request.GET['user']
             email = self.request.GET['email']
-            self.response.write(page_head + user + ' ' + email + page_close)
+            self.response.write(page_head + user + ' ' + email + brand + age + page_close)
         else:
             self.response.write(page_head + page_body + page_close) #print
 
