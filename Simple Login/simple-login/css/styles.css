@@ -7,6 +7,7 @@ body {
 }
 form {
     background: #C3B189;
+    color: #000 !important;
     padding: 20px;
     width: 320px;
     left: 0;
@@ -20,4 +21,8 @@ h1 {
 }
 label, input {
     padding: 0 0 10px 0;
+}
+input:focus, input:focus {
+	border: 1px solid #900;
+	background-color: #FFFF9D;
 }
