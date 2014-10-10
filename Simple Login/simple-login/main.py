@@ -12,6 +12,7 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
 <html>
     <head>
         <title>Stacy Faude | Simple Form</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>'''
 
