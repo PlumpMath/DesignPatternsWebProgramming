@@ -18,6 +18,8 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
 
 
         page_body = '''<form method ="GET">
+        <h1>Order your sandwich</h1>
+        <hr>
             <label>Name: </label><input type="text" name="user" /><br/>
             <label>Email: </label><input type="text" name="email" /><br/>
             <input type="checkbox" name="bread" value="white" /> White<br/>
@@ -42,7 +44,7 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
-
+            <br/>
             <input type="submit" value="Submit" />'''
         page_close = '''
         </form>
