@@ -17,8 +17,8 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
 
 
         page_body = '''<form method ="GET">
-            <label>Name: </label><input type="text" name="user" />
-            <label>Email: </label><input type="text" name="email" />
+            <label>Name: </label><input type="text" name="user" /><br/>
+            <label>Email: </label><input type="text" name="email" /><br/>
             <input type="checkbox" name="bread" value="white" /> White<br/>
             <input type="checkbox" name="bread" value="wheat" /> Wheat<br/>
             <input type="checkbox" name="bread" value="flatbread" /> Flat Bread<br/>
@@ -36,6 +36,11 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
+            <p>Chips</p>
+             <select name="chips">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
 
             <input type="submit" value="Submit" />'''
         page_close = '''
@@ -50,7 +55,8 @@ class MainHandler(webapp2.RequestHandler):#declaring a class
             bread = self.request.GET['bread']
             sandwich = self.request.GET['sandwich']
             soup = self.request.GET['soup']
-            self.response.write(page_head + user + ' ' + email + ' ' + bread + ' ' + sandwich + ' ' + soup + page_close)
+            chips = self.request.GET['chips']
+            self.response.write(page_head + user + ' ' + email + ' ' + bread + ' ' + sandwich + ' ' + soup + ' ' + chips + page_close)
         else:
             self.response.write(page_head + page_body + page_close) #print
 
