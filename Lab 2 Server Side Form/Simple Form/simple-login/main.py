@@ -8,26 +8,20 @@ import webapp2 #use the webapp2 library
 
 class MainHandler(webapp2.RequestHandler):#declaring a class
     def get(self): #function that starts everything. Catalyst
-    p = Page()
-    self.response.write(p.print_out())
-
-class Page(object):
-    def __init__(self):
-        self.title = "Stacy Faude | Lab 2"
-        self.css = "css/styles.css"
-
         page_head = '''<!DOCTYPE HTML>
 <html>
     <head>
-        <title>{self.title}</title>
-        <link href={self.css}" rel="stylesheet" type="text/css" />
+        <title>Stacy Faude | Simple Form</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>'''
 
 
         page_body = '''<form method ="GET">
-            <label>Name: </label><input type="text" name="user" />
-            <label>Email: </label><input type="text" name="email" />
+        <h1>Order your sandwich</h1>
+        <hr>
+            <label>Name: </label><input type="text" name="user" /><br/>
+            <label>Email: </label><input type="text" name="email" /><br/>
             <input type="checkbox" name="bread" value="white" /> White<br/>
             <input type="checkbox" name="bread" value="wheat" /> Wheat<br/>
             <input type="checkbox" name="bread" value="flatbread" /> Flat Bread<br/>
@@ -45,7 +39,12 @@ class Page(object):
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
-
+            <p>Chips</p>
+             <select name="chips">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <br/>
             <input type="submit" value="Submit" />'''
         page_close = '''
         </form>
@@ -59,15 +58,14 @@ class Page(object):
             bread = self.request.GET['bread']
             sandwich = self.request.GET['sandwich']
             soup = self.request.GET['soup']
-            self.response.write(page_head + user + ' ' + email + ' ' + bread + ' ' + sandwich + ' ' + soup + page_close)
+            chips = self.request.GET['chips']
+            self.response.write(page_head + user + ' ' + email + ' ' + bread + ' ' + sandwich + ' ' + soup + ' ' + chips + page_close)
         else:
             self.response.write(page_head + page_body + page_close) #print
 
         #self.response.write(page) #printing the info out to the page
 
-    def print_out(self):
-        all = all.formats(**locals())
-        return all
+
 
 #never tough this
 app = webapp2.WSGIApplication([
