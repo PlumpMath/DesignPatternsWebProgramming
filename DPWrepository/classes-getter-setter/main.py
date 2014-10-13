@@ -10,6 +10,8 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         #self.response.write('Hello world!')
         p = Page()
+        p.title = "My Page"
+        p.css = "css/style.css"
         p.body = "This is Stacys Python Example"
         self.response.write(p.print_out())
 

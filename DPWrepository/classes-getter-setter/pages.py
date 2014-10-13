@@ -1,8 +1,8 @@
 
 class Page(object):
     def __init__(self):
-        self.title = "Welcome"
-        self.css = "css/style.css"
+        self.__title = "Welcome"
+        self.__css = "css/style.css"
         self.head = """
 
 <!DOCTYPE HTML>
@@ -25,3 +25,19 @@ class Page(object):
         all = self.head + self.body + self.close
         all = all.format(**locals())
         return all
+
+    @property
+    def title(self):
+        return self.__title
+
+    @title.setter
+    def title(self, new_title):
+        self.__title = new_title
+
+    @property
+    def css(self):
+        return self.__css
+
+    @css.setter
+    def css(self, new_css_file):
+        self.__css = new_css_file
