@@ -9,7 +9,7 @@ class MainHandler(webapp2.RequestHandler):
         t.grade2 = 100
         t.quiz1 = 75
         t.quiz1 = 99
-        self.response.write("Tommy's final grade is " + str(t.final_grade_getter))
+        self.response.write("Tommy's final grade is " + str(t.final_grade))
 
         #student 2
         s = Transcript()
@@ -17,7 +17,7 @@ class MainHandler(webapp2.RequestHandler):
         s.grade2 = 80
         s.quiz1 = 66
         s.quiz2 = 76
-        self.response.write("<br />Sally's final grade is " + str(s.final_grade_getter))
+        self.response.write("<br />Sally's final grade is " + str(s.final_grade))
 
 
 class Transcript(object):
@@ -31,7 +31,7 @@ class Transcript(object):
 
 
     @property
-    def final_grade_getter(self):
+    def final_grade(self):
         #calculate final grade
         self.__final_grade = (self.grade1 + self.grade2 + self.quiz1 + self.quiz2 + self.final_exam)/5
         return self.__final_grade
