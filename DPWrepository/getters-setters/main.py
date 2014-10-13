@@ -9,7 +9,7 @@ class MainHandler(webapp2.RequestHandler):
         t.grade2 = 100
         t.quiz1 = 75
         t.quiz1 = 99
-        print "Tommy's final grade is " + str(t.final_grade)
+        self.response.write("Tommy's final grade is " + str(t.final_grade))
 
         #student 2
         s = Transcript()
@@ -17,6 +17,7 @@ class MainHandler(webapp2.RequestHandler):
         s.grade2 = 80
         s.quiz1 = 66
         s.quiz2 = 76
+        self.respose.write("Sally's final grade is " + str(s.final_grade_getter))
 
 
 class Transcript(object):
