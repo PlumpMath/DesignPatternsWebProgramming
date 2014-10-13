@@ -21,10 +21,10 @@ class Page(object):
 </html>
     """
 
-    def print_out(self):
+    '''def print_out(self):
         all = self.head + self.body + self.close
         all = all.format(**locals())
-        return all
+        return all'''
 
     @property
     def title(self):

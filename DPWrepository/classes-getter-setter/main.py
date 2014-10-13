@@ -13,7 +13,7 @@ class MainHandler(webapp2.RequestHandler):
         p.title = "My Page"
         p.css = "css/style.css"
         p.body = "This is Stacys Python Example"
-        self.response.write(p.print_out())
+        #self.response.write(p.print_out())
 
 
 app = webapp2.WSGIApplication([
