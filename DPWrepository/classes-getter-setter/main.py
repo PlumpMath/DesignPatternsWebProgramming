@@ -14,6 +14,8 @@ class MainHandler(webapp2.RequestHandler):
         p.css = "css/style.css"
         p.body = "This is Stacys Python Example"
         #self.response.write(p.print_out())
+        p.update()
+        self.response.write(p.whole_page)
 
 
 app = webapp2.WSGIApplication([
