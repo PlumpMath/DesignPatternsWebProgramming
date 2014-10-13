@@ -9,7 +9,7 @@ class MainHandler(webapp2.RequestHandler):
         t.grade2 = 100
         t.quiz1 = 75
         t.quiz1 = 99
-        print t.__final_grade
+        print t.final_grade
 
         #student 2
         s = Transcript()
@@ -27,6 +27,11 @@ class Transcript(object):
         self.quiz2 = 0
         self.final_exam = 0
         self.__final_grade = 0 #two underscores in front make this privare
+
+
+    @property
+    def final_grade(self):
+        return self.__final_grade
 
 
 
