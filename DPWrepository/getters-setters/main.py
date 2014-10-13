@@ -35,7 +35,7 @@ class Transcript(object):
     @property
     def final_grade(self):
         #calculate final grade
-        self.__final_grade = (self.grade1 + self.grade2 + self.quiz1 + self.quiz2 + self.final_exam)/5
+        '''self.__final_grade = (self.grade1 + self.grade2 + self.quiz1 + self.quiz2 + self.final_exam)/5'''
         return self.__final_grade
 
     @final_grade.setter
