@@ -9,7 +9,7 @@ class MainHandler(webapp2.RequestHandler):
         t.grade2 = 100
         t.quiz1 = 75
         t.quiz1 = 99
-        print t.final_grade
+        print "Tommy's final grade is " + str(t.final_grade)
 
         #student 2
         s = Transcript()
