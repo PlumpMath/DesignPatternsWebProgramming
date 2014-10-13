@@ -14,7 +14,7 @@ class Page(object):
     <body>
         """
 
-        self.body = "Welcome to my OOP Python Page"
+        self.__body = "Welcome to my OOP Python Page"
         self.close = """
 
     </body>
@@ -29,12 +29,22 @@ class Page(object):
 
 
     @property
+    def body(self):
+        return self.__body
+
+    @body.setter
+    def body(self, new_body):
+        self.__body = new_body
+        self.update()
+
+    @property
     def title(self):
         return self.__title
 
     @title.setter
     def title(self, new_title):
         self.__title = new_title
+        self.update()
 
     @property
     def css(self):
@@ -43,3 +53,4 @@ class Page(object):
     @css.setter
     def css(self, new_css_file):
         self.__css = new_css_file
+        self.update()

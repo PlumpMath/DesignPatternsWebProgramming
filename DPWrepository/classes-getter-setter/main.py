@@ -12,7 +12,7 @@ class MainHandler(webapp2.RequestHandler):
         p = Page()
         p.title = "My Page"
         p.css = "css/style.css"
-        p.body = "This is Stacys Python Example"
+        p.body = "This is Stacy's Python Example"
         #self.response.write(p.print_out())
         p.update()
         self.response.write(p.whole_page)
