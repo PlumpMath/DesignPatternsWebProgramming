@@ -8,7 +8,7 @@ class MainHandler(webapp2.RequestHandler):
         t.grade1 = 90
         t.grade2 = 100
         t.quiz1 = 75
-        t.quiz1 = 99
+        t.quiz2 = 99
         t.final_grade = 99
         self.response.write("Tommy's final grade is " + str(t.final_grade))
 
@@ -18,7 +18,7 @@ class MainHandler(webapp2.RequestHandler):
         s.grade2 = 80
         s.quiz1 = 66
         s.quiz2 = 76
-
+        s.calc_grade()
         self.response.write("<br />Sally's final grade is " + str(s.final_grade))
 
 
