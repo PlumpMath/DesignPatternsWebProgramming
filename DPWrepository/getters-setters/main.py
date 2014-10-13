@@ -1,24 +1,34 @@
-#!/usr/bin/env python
-#
-# Copyright 2007 Google Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        #student 1
+        t = Transcript()
+        t.grade1 = 90
+        t.grade2 = 100
+        t.quiz1 = 75
+        t.quiz1 = 99
+        print t.__final_grade
+
+        #student 2
+        s = Transcript()
+        s.grade1 = 45
+        s.grade2 = 80
+        s.quiz1 = 66
+        s.quiz2 = 76
+
+
+class Transcript(object):
+    def __init__(self):
+        self.grade1 = 0
+        self.grade2 = 0
+        self.quiz1 = 0
+        self.quiz2 = 0
+        self.final_exam = 0
+        self.__final_grade = 0 #two underscores in front make this privare
+
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
