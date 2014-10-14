@@ -8,7 +8,13 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        #movie title
+        #year the movie was made
+        #director of the film
+
+
+
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
