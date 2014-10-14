@@ -31,6 +31,8 @@ class FavoriteMovies(object):
 
         print years
         #sort years from low to high
+        years.sort()
+        print years
 
         #subtract the low year from the high year
         #return the span

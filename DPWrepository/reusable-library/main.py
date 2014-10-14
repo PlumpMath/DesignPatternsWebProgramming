@@ -30,6 +30,12 @@ class MainHandler(webapp2.RequestHandler):
         md2.director = "David Lynch"
         lib.add_movie(md2)
 
+        md3 = MovieData()
+        md3.title = "Star Wars"
+        md3.year = 1977 #this is actually calling a function
+        md3.director = "George Lucas"
+        lib.add_movie(md3)
+
         #lib.movie_list = [md1, md2] you could do this if it was public
 
         lib.calc_time_span()
