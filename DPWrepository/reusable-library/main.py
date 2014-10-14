@@ -32,7 +32,9 @@ class MainHandler(webapp2.RequestHandler):
 
         #lib.movie_list = [md1, md2] you could do this if it was public
 
-        self.response.write(lib.compileList())
+        p.body = lib.compileList() #change the body before it prints it out - lib.compile list is outputting the string and going it the atribute we have in that class - now the html code will show
+
+        self.response.write(p.print_out())
 
 
 
