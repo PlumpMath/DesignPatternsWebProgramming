@@ -42,7 +42,7 @@ class FavoriteMovies(object):
 
     @property
     def movie_list(self):
-        returns self.__movie_list
+        return self.__movie_list
 
 
 class MovieData(object): #Data Object
