@@ -22,11 +22,15 @@ class MainHandler(webapp2.RequestHandler):
         md1.title = "The Princess Bride"
         md1.year = 1989 #this is actually calling a function
         md1.director = "Rob Reiner"
+        lib.addMovie(md1)
 
         md2 = MovieData()
         md2.title = "Dune"
         md2.year = 1986 #this is actually calling a function
         md2.director = "David Lynch"
+
+        #lib.movie_list = [md1, md2] you could do this if it was public
+
 
 
         self.response.write(p.print_out())

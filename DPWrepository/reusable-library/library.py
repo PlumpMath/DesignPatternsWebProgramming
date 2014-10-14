@@ -7,6 +7,9 @@ class FavoriteMovies(object):
         #generate a list of movies at the end
         #calculate the time span between movies
 
+    def addMovie(self, m):
+        self.__movie_list.append(m)
+        print m #check to see if the code is working
 
 
 class MovieData(object): #Data Object
