@@ -30,12 +30,9 @@ class MainHandler(webapp2.RequestHandler):
         md2.director = "David Lynch"
         lib.addMovie(md2)
 
-
         #lib.movie_list = [md1, md2] you could do this if it was public
 
-
-
-        self.response.write(p.print_out())
+        self.response.write(lib.compileList())
 
 
 
