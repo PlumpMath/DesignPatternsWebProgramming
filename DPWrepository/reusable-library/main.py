@@ -6,9 +6,13 @@
 
 import webapp2
 from library import MovieData
+from ResultsPages import Page
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+
+        p = Page()
+
         #movie title
         #year the movie was made
         #director of the film
@@ -23,7 +27,7 @@ class MainHandler(webapp2.RequestHandler):
         md2.director = "David Lynch"
 
 
-
+        self.response.write(p.print_out())
 
 
 

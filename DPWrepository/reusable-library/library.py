@@ -1,3 +1,13 @@
+class FavoriteMovies(object):
+    def __init__(self):
+        pass
+        #have an array to hold movie info
+        #some way to add to the array
+        #generate a list of movies at the end
+        #calculate the time span between movies
+
+
+
 class MovieData(object): #Data Object
     def __init__(self):
         self.title = ''
