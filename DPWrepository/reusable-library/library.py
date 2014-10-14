@@ -40,6 +40,10 @@ class FavoriteMovies(object):
         #return the span
         return 'The span between films is ' + str(span)
 
+    @property
+    def movie_list(self):
+        returns self.__movie_list
+
 
 class MovieData(object): #Data Object
     def __init__(self):
