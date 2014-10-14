@@ -38,8 +38,8 @@ class MainHandler(webapp2.RequestHandler):
 
         #lib.movie_list = [md1, md2] you could do this if it was public
 
-        lib.calc_time_span()
-        p.body = lib.compile_list() #change the body before it prints it out - lib.compile list is outputting the string and going it the atribute we have in that class - now the html code will show
+
+        p.body = lib.compile_list() + lib.calc_time_span() #change the body before it prints it out - lib.compile list is outputting the string and going it the atribute we have in that class - now the html code will show
 
         self.response.write(p.print_out())
 
