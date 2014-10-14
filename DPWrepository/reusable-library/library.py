@@ -26,7 +26,7 @@ class MovieData(object): #Data Object
 
     @property
     def year(self):
-        pass
+        return self.__year
 
     @year.setter
     def year(self, y):
