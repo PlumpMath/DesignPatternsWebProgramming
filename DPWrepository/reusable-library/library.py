@@ -9,7 +9,7 @@ class FavoriteMovies(object):
 
     def addMovie(self, m):
         self.__movie_list.append(m)
-        print m #check to see if the code is working
+        print m.title #check to see if the code is working
 
 
 class MovieData(object): #Data Object
