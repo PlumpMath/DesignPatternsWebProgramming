@@ -11,6 +11,12 @@ class FavoriteMovies(object):
         self.__movie_list.append(m)
         print m.title #check to see if the code is working
 
+    def compileList(self):
+        output = ''
+        for movie in self.__movie_list: #for statement for each movie in array
+            output += 'Title: ' + movie.title +'<br />'
+        return output
+
 
 class MovieData(object): #Data Object
     def __init__(self):
