@@ -5,13 +5,15 @@
 #
 
 import webapp2
-from library import MovieData
+#from library import MovieData
+from library import MovieData, FavoriteMovies #Changing what data to import
 from ResultsPages import Page
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
         p = Page()
+        lib = FavoriteMovies()
 
         #movie title
         #year the movie was made

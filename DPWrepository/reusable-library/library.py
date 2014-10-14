@@ -1,5 +1,6 @@
 class FavoriteMovies(object):
     def __init__(self):
+        self.__movie_list = []
         pass
         #have an array to hold movie info
         #some way to add to the array
