@@ -14,7 +14,7 @@ class FavoriteMovies(object):
     def compileList(self):
         output = ''
         for movie in self.__movie_list: #for statement for each movie in array
-            output += 'Title: ' + movie.title + '(' + movie.year + ') Directed by: ' + movie.director + '<br />'
+            output += 'Title: ' + movie.title + '(' + str(movie.year) + ') Directed by: ' + movie.director + '<br />'
         return output
 
 
