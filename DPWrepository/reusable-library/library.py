@@ -19,6 +19,7 @@ class FavoriteMovies(object):
 
     #adding an utility function
     def calc_time_span(self):
+        pass
 
 
 class MovieData(object): #Data Object
