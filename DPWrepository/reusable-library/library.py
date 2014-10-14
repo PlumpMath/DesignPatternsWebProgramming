@@ -9,7 +9,8 @@ class FavoriteMovies(object):
 
     def add_movie(self, m):
         self.__movie_list.append(m)
-        print m.title #check to see if the code is working
+        #print m.title #check to see if the code is working
+        #<movie data object>
 
     def compile_list(self):
         output = ''
@@ -19,7 +20,20 @@ class FavoriteMovies(object):
 
     #adding an utility function
     def calc_time_span(self):
-        pass
+        '''
+        calculate the time between movies
+        '''
+        #years
+        #create a years array
+        years = []
+        for movie in self.__movie_list:
+            years.append(movie.year)
+
+        print years
+        #sort years from low to high
+
+        #subtract the low year from the high year
+        #return the span
 
 
 class MovieData(object): #Data Object
