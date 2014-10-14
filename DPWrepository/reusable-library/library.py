@@ -32,10 +32,13 @@ class FavoriteMovies(object):
         print years
         #sort years from low to high
         years.sort()
-        print years
 
         #subtract the low year from the high year
+        num = len(years) - 1
+        span = years [num] - years[0] #last number - first number
+
         #return the span
+        return 'The span between films is ' + str(span)
 
 
 class MovieData(object): #Data Object
