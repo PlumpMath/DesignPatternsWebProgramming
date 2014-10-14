@@ -28,6 +28,8 @@ class MainHandler(webapp2.RequestHandler):
         md2.title = "Dune"
         md2.year = 1986 #this is actually calling a function
         md2.director = "David Lynch"
+        lib.addMovie(md2)
+
 
         #lib.movie_list = [md1, md2] you could do this if it was public
 
