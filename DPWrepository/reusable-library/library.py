@@ -7,6 +7,11 @@ class MovieData(object): #Data Object
     @property
     def year(self):
         pass
+
     @year.setter
     def year(self, y):
-        self.__year = y
+        if y > 2014: #if the date isnt valid
+            print "Error invalid date!"
+
+        else:
+            self.__year = y

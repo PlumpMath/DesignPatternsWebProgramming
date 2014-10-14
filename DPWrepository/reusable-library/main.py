@@ -14,7 +14,7 @@ class MainHandler(webapp2.RequestHandler):
         #director of the film
         md1 = MovieData()
         md1.title = "The Princess Bride"
-        md1.year = 1989
+        md1.year = 1989 #this is actually calling a function
         md1.director = "Rob Reiner"
 
 
