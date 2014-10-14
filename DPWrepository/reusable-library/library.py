@@ -7,15 +7,18 @@ class FavoriteMovies(object):
         #generate a list of movies at the end
         #calculate the time span between movies
 
-    def addMovie(self, m):
+    def add_movie(self, m):
         self.__movie_list.append(m)
         print m.title #check to see if the code is working
 
-    def compileList(self):
+    def compile_list(self):
         output = ''
         for movie in self.__movie_list: #for statement for each movie in array
             output += 'Title: ' + movie.title + '(' + str(movie.year) + ') Directed by: ' + movie.director + '<br />'
         return output
+
+    #adding an utility function
+    def calc_time_span(self):
 
 
 class MovieData(object): #Data Object
