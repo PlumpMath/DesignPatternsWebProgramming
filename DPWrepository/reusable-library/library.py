@@ -12,6 +12,6 @@ class MovieData(object): #Data Object
     def year(self, y):
         if y > 2014: #if the date isnt valid
             print "Error invalid date!"
-
+            self.__year = 2014
         else:
             self.__year = y

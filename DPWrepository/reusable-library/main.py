@@ -17,6 +17,12 @@ class MainHandler(webapp2.RequestHandler):
         md1.year = 1989 #this is actually calling a function
         md1.director = "Rob Reiner"
 
+        md2 = MovieData()
+        md2.title = "Dune"
+        md2.year = 1986 #this is actually calling a function
+        md2.director = "David Lynch"
+
+
 
 
 
