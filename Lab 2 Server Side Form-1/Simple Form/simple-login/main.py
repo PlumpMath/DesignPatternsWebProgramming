@@ -1,12 +1,13 @@
-#Stacy Faude
-#10-14-14
-# Design Patters for Web Programming
-#Reusable Library
+'''
+Stacy Faude
+10-8-14
+Design Patterns for Web Programming
+Simple Form
+'''
+import webapp2 #use the webapp2 library
 
-import webapp2
-
-class MainHandler(webapp2.RequestHandler):
-    def get(self):
+class MainHandler(webapp2.RequestHandler):#declaring a class
+    def get(self): #function that starts everything. Catalyst
         page_head = '''<!DOCTYPE HTML>
 <html>
     <head>
@@ -65,7 +66,8 @@ class MainHandler(webapp2.RequestHandler):
         #self.response.write(page) #printing the info out to the page
 
 
-#Dont Touch This
+
+#never tough this
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
