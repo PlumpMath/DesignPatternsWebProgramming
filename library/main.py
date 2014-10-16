@@ -18,9 +18,10 @@ class MainHandler(webapp2.RequestHandler):
 
         #page for receipt
 
-        r = receipt()
+        r = Receipt()
 
         self.response.write(form.print_out())
+        self.response.write(r.print_out())
 
 #Dont Touch This
 app = webapp2.WSGIApplication([

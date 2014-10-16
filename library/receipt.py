@@ -18,5 +18,5 @@ class Receipt(object):
 </html>
         """
     def print_out(self):
-        all = self.__head + self.body + self.__error + self.__close
+        all = self.__title + self.css + self.__head + self.body + self.__error + self.__close
         return all
