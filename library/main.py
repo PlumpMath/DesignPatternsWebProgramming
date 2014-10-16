@@ -7,6 +7,7 @@ import webapp2
 #from form input form data
 from library import Order
 from form import OrderSandwich
+from receipt import Receipt
 
 
 class MainHandler(webapp2.RequestHandler):
@@ -14,6 +15,10 @@ class MainHandler(webapp2.RequestHandler):
         order1 = Order()
 
         form = OrderSandwich()
+
+        #page for receipt
+
+        r = receipt()
 
         self.response.write(form.print_out())
 

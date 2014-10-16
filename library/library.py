@@ -13,4 +13,8 @@ class Order(object):
 
     @quantity.setter
     def quantity(self, num):
-        self.__quantity = num
+        if num > 1: #if the number is not valid
+            print "Error, invalid number!"
+            self.__quantity = 1
+        else:
+            self.__quantity = num
