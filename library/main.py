@@ -15,6 +15,8 @@ class MainHandler(webapp2.RequestHandler):
 
         form = OrderSandwich()
 
+        self.response.write(form.print_out())
+
 #Dont Touch This
 app = webapp2.WSGIApplication([
   ('/', MainHandler)
