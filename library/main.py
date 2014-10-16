@@ -52,9 +52,9 @@ class MainHandler(webapp2.RequestHandler):
             phone = self.request.GET['phone']
             bread = self.request.GET['bread']
             sandwich = self.request.GET['sandwich']
-            soup = self.request.GET['soup']
+            quantity = self.request.GET['quantity']
             chips = self.request.GET['chips']
-            self.response.write(page_head + user + ' ' + phone + ' ' + bread + ' ' + sandwich + ' ' + soup + ' ' + chips + page_close)
+            self.response.write(page_head + user + ' ' + phone + ' ' + bread + ' ' + quantity + ' ' + sandwich + ' ' + ' ' + chips + page_close)
         else:
             self.response.write(page_head + page_body + page_close) #print
 
