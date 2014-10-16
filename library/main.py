@@ -12,7 +12,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         order1 = Order()
 
-        self.response.write(order1)
+        self.response.write(OrderSandwich)
 
 #Dont Touch This
 app = webapp2.WSGIApplication([
