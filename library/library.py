@@ -1,4 +1,4 @@
-class OrderSandwich(object):
+class Order(object):
     def __init(self):
         self.user = ''
         self.phone = ''

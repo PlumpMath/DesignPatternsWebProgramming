@@ -5,13 +5,11 @@
 
 import webapp2
 #from form input form data
-from library import OrderSandwich
+from library import Order
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        form = OrderSandwich()
-
-        self.response.write(form.print_out())
+        order1 = Order()
 
 #Dont Touch This
 app = webapp2.WSGIApplication([
