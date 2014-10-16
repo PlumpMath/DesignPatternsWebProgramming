@@ -1,12 +1,5 @@
-#Stacy Faude
-#10-14-14
-# Design Patters for Web Programming
-#Reusable Library
-
-import webapp2
-
-class MainHandler(webapp2.RequestHandler):
-    def get(self):
+class OrderSandwich(object):
+    def __init__(self):
         page_head = '''<!DOCTYPE HTML>
 <html>
     <head>
@@ -59,9 +52,3 @@ class MainHandler(webapp2.RequestHandler):
             self.response.write(page_head + page_body + page_close) #print
 
         #self.response.write(page) #printing the info out to the page
-
-
-#Dont Touch This
-app = webapp2.WSGIApplication([
-    ('/', MainHandler)
-], debug=True)
