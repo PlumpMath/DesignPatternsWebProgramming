@@ -13,5 +13,5 @@ class MainHandler(webapp2.RequestHandler):
 
 #Dont Touch This
 app = webapp2.WSGIApplication([
-                                  ('/', MainHandler)
-                              ], debug=True)
+  ('/', MainHandler)
+], debug=True)
