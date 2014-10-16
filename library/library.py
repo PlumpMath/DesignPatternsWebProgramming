@@ -22,4 +22,3 @@ class OrderSandwich(object):
         '''
         calculate the total of the order
         '''
-        
