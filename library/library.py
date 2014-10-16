@@ -15,9 +15,6 @@ class OrderSandwich(object):
 
 
 
-
-
-
     def calc_order_total(self):
         '''
         calculate the total of the order
