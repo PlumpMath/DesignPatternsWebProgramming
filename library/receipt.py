@@ -18,5 +18,4 @@ class Receipt(object):
 </html>
         """
     def compile_order(self):
-        output = "
-                 for order in self.__order"
+        return all

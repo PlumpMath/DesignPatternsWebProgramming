@@ -1,13 +1,16 @@
 class MyOrder(object):
     def __init__(self):
-        pass
+        self.__order_list = []
+
         #have an array to hold order info
-    
+
         #have some way to add to order
 
         #Generate order total at the end
 
         #Calcualte order total and pickup time
+
+
 
 class Order(object):
     def __init(self):
