@@ -10,7 +10,7 @@ from receipt import Page
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-
+        pass
 
 
 #Dont Touch This
