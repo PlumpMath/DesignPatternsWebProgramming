@@ -11,6 +11,8 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         order1 = Order()
 
+        self.response.write("hello world")
+
 #Dont Touch This
 app = webapp2.WSGIApplication([
   ('/', MainHandler)
