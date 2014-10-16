@@ -1,4 +1,4 @@
-class Page(object):
+class Receipt(object):
     def __init(self):
         self.__title = "Sandwich"
         self.css = "css/styles.css"

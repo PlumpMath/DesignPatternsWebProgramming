@@ -6,14 +6,14 @@
 import webapp2
 #from form input form data
 from form import OrderSandwich
-from receipt import Page
+from receipt import Receipt
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
-    f = form()
+    form = OrderSandwich()
 
-
+    self.response.write(OrderSandwich.print_out())
 
 #Dont Touch This
 app = webapp2.WSGIApplication([
