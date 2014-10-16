@@ -17,6 +17,6 @@ class Receipt(object):
     </body>
 </html>
         """
-    def print_out(self):
-        all = self.__title + self.css + self.__head + self.body + self.__error + self.__close
-        return all
+    def compile_order(self):
+        output = "
+                 for order in self.__order"
