@@ -10,6 +10,10 @@ class MyOrder(object):
 
         #Calcualte order total and pickup time
 
+    def addOrder(self, m):
+        self.__order_list.append(m)
+        print m
+
 
 
 class Order(object):

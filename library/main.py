@@ -17,9 +17,11 @@ class MainHandler(webapp2.RequestHandler):
         form = OrderSandwich()
 
         #page for receipt
-        o = MyOrder()
+        o = MyOrder() #import from library.py
 
         r = Receipt()
+
+        o.addOrder(m)
 
         self.response.write(form.print_out())
         self.response.write(r.print_out())
