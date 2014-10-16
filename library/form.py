@@ -39,16 +39,3 @@ class OrderSandwich(object):
     </body>
 </html>'''
 
-        if self.request.GET:
-            #stores info we got from the form
-            user = self.request.GET['user']
-            phone = self.request.GET['phone']
-            bread = self.request.GET['bread']
-            sandwich = self.request.GET['sandwich']
-            quantity = self.request.GET['quantity']
-            chips = self.request.GET['chips']
-            self.response.write(page_head + user + ' ' + phone + ' ' + bread + ' ' + quantity + ' ' + sandwich + ' ' + ' ' + chips + page_close)
-        else:
-            self.response.write(page_head + page_body + page_close) #print
-
-        #self.response.write(page) #printing the info out to the page

@@ -1,7 +1,12 @@
 class OrderSandwich(object):
     def __init(self):
-        self.__your_order = []
-        pass
+        self.user = ''
+        self.phone = ''
+        self.bread = ''
+        self.sandwich = ''
+        self.quantity = '' #check for valid quantity
+        self.chips = ''
+
 
     def add_order(self, s):
         self.__your_order(s)
@@ -10,7 +15,7 @@ class OrderSandwich(object):
     def compile_order(self):
         output = ''
         for order in self.__your_order:
-            output += 'Your Name: ' + ' ' + 'You wanted ' + quantity + sandwich + 'on ' + bread + '<br />'
+            output += 'Your Name: ' + ' ' + 'You wanted ' + '<br />'
         return output
 
 
