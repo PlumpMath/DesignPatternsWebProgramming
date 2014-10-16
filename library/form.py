@@ -1,6 +1,6 @@
 class OrderSandwich(object):
     def __init__(self):
-        page_head = '''<!DOCTYPE HTML>
+        self.__head = '''<!DOCTYPE HTML>
 <html>
     <head>
         <title>Stacy Faude | Simple Form</title>
@@ -9,7 +9,7 @@ class OrderSandwich(object):
     <body>'''
 
 
-        page_body = '''<form method ="GET">
+        self.body = '''<form method ="GET">
         <h1>Order your sandwich</h1>
         <hr>
             <label>Name: </label><input type="text" name="user" /><br/>
@@ -34,8 +34,12 @@ class OrderSandwich(object):
              <input type="radio" name="chips" value="no">no
             <br/>
             <input type="submit" value="Submit" />'''
-        page_close = '''
+        self.__close = '''
         </form>
     </body>
 </html>'''
+
+ def print_out(self):
+        all = self.__head + self.body + self.__close
+        return all
 
