@@ -3,7 +3,8 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        p = Page()
+        p = FormPage()
+        p.inputs = [ ['first_name', 'text', 'First Name'], ['last_name', 'text', 'Last Name'],['Submit', 'submit']]
         self.response.write(p.print_out())
 
 class Page(object): #borrowing stuff from the object class
@@ -29,9 +30,24 @@ class FormPage(Page):
         super(FormPage, self).__init__() # or Page.__init__()
         self._form_open = '<form method="GET">'
         self._form_close = '</form>'
+        self.__inputs = []
         #<label>First Name</label><input type="text" value="" name="first_name" placeholder="first name"/>
+        #looking for an array as such: ['first_name', 'text', 'First Name']
+        #place holder, type, value
         #<label>Last Name</label><input type="text" value="" name="last_name" placeholder="first name"/>
         #<input type="submit" value="submit" />
+
+        @property
+        def inputs(self):
+            pass
+
+        @inputs.setter
+        def inputs(self, arr):
+            #change my private inputs varible
+            self.__inputs = arr
+            #sort through the mega array and create HTML inputs based on info there
+            print arr
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
