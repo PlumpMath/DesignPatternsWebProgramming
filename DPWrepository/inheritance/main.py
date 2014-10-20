@@ -4,7 +4,7 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = FormPage()
-        p.inputs = [ ['first_name', 'text', 'First Name'], ['last_name', 'text', 'Last Name'],['Submit', 'submit']]
+        p.inputs = [['first_name', 'text', 'First Name'], ['last_name', 'text', 'Last Name'], ['Submit', 'submit']]
         self.response.write(p.print_out())
 
 class Page(object): #borrowing stuff from the object class
@@ -35,7 +35,7 @@ class FormPage(Page):
         #looking for an array as such: ['first_name', 'text', 'First Name']
         #place holder, type, value
         #<label>Last Name</label><input type="text" value="" name="last_name" placeholder="first name"/>
-        #<input type="submit" value="submit" />
+        #<input type="submit" value="Submit" />
 
         @property
         def inputs(self):
@@ -43,7 +43,7 @@ class FormPage(Page):
 
         @inputs.setter
         def inputs(self, arr):
-            #change my private inputs varible
+            #change my private inputs variable
             self.__inputs = arr
             #sort through the mega array and create HTML inputs based on info there
             print arr
