@@ -51,7 +51,7 @@ class FormPage(Page):
         for item in arr:
             self._form_inputs += '<input type="' + item[1] + '" name="' + item[0]
             #if there is a third item... add it in...
-            if len(item) > 2:
+            try:
                 self._form_inputs += '"placeholder="'+item[2]+'" />'
 
             #otherwise ... end the tag
