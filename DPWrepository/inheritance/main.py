@@ -26,7 +26,12 @@ class Page(object): #borrowing stuff from the object class
 class FormPage(Page):
     def __init__(self):
         #constructor function for the super class
-        super(FormPage, self).__init__()
+        super(FormPage, self).__init__() # or Page.__init__()
+        self._form_open = '<form method="GET">'
+        self._form_close = '</form>'
+        #<label>First Name</label><input type="text" value="" name="first_name" placeholder="first name"/>
+        #<label>Last Name</label><input type="text" value="" name="last_name" placeholder="first name"/>
+        #<input type="submit" value="submit" />
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
