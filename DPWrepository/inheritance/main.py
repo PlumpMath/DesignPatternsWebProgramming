@@ -49,7 +49,18 @@ class FormPage(Page):
         self.__inputs = arr
         #sort through the mega array and create HTML inputs based on info there
         for item in arr:
-            self._form_inputs += '<input type="' + item[1] + '" name="' + item[0]+ '"placeholder="'+item[2]+'" />'
+            self._form_inputs += '<input type="' + item[1] + '" name="' + item[0]
+            #if there is a third item... add it in...
+            if len(item) > 2
+                self._form_inputs += '"placeholder="'+item[2]+'" />'
+
+            #otherwise ... end the tag
+            else:
+                self._form_inputs += '" />'
+
+        print self._form_inputs
+
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
