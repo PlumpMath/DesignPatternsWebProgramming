@@ -55,7 +55,7 @@ class FormPage(Page):
                 self._form_inputs += '"placeholder="'+item[2]+'" />'
 
             #otherwise ... end the tag
-            else:
+            except:
                 self._form_inputs += '" />'
 
         print self._form_inputs
