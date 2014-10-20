@@ -26,7 +26,7 @@ class Page(object): #borrowing stuff from the object class
 class FormPage(Page):
     def __init__(self):
         #constructor function for the super class
-        Page.__init__()
+        super(FormPage, self).__init__()
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
