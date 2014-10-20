@@ -31,6 +31,7 @@ class FormPage(Page):
         self._form_open = '<form method="GET">'
         self._form_close = '</form>'
         self.__inputs = []
+        self._form_inputs = ''
 
         #<label>First Name</label><input type="text" value="" name="first_name" placeholder="first name"/>
         #looking for an array as such: ['first_name', 'text', 'First Name']
@@ -48,9 +49,7 @@ class FormPage(Page):
         self.__inputs = arr
         #sort through the mega array and create HTML inputs based on info there
         for item in arr:
-            print item
-
-
+            self._form_inputs += '<input type="' + item[1] + '" name="' + item[0]+ '"placeholder="'+item[2]+'" />'
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
