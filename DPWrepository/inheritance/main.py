@@ -61,7 +61,8 @@ class FormPage(Page):
         print self._form_inputs
 
     def print_out_form(self):
-        self._head + self._body + self._form_open + self._form_inputs + self._form_close + self._close
+        return self._head + self._body + self._form_open + self._form_inputs + self._form_close + self._close
+
 
 
 app = webapp2.WSGIApplication([
