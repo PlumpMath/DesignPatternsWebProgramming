@@ -4,10 +4,13 @@
 
 
 import webapp2
+from page import Page
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        p = Page()
+        p.body = "Content"
+        self.response.write(p.print_out())
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
